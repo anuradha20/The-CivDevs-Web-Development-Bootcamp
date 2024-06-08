@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <TITLE>Function</TITLE>
+    </head>
+    <body bgcolor="MINTCREAM">
+        <div><CENTER><img src="http://www.iitk.ac.in/new/images/logo/iitk-logo.svg" height=100px> </CENTER> </div>
+        <div><center><H1><font color="MIDNIGHTBLUE">Hey, you can use the given function for the calculation of your spi.</font></H1></center></div>
+    <center>   
+        <div>
+         <TABLE BORDER="1", BORDERCOLOR="BLUE", BGCOLOR="AQUA" width="60%" height="50%"  cellpadding="10%">
+             <TR> 
+                <TH>COURSE NAME</TH>
+                <TH BGCOLOR="#63eea0">CREDITS</TH>
+                <TH BGCOLOR="#63eea0">GRADE</TH>
+             </TR>
+             <TR> 
+                <TH>ESC201A</TH>
+                <TD BGCOLOR="#63eea0"><center><INPUT TYPE="NUMBER" id="c1" style="height:40px; width:300px;"></center></TD>
+                <TD BGCOLOR="#63eea0"><center><INPUT TYPE="text" id="g1" style="height:40px; width:300px;"></center></TD>
+             </TR>
+             <TR> 
+                <TH>TA201A</TH>
+                <TD BGCOLOR="#63eea0"><center><INPUT TYPE="NUMBER" id="c2" style="height:40px; width:300px;"></center></TD>
+                <TD BGCOLOR="#63eea0"><center><INPUT TYPE="text" id="g2" style="height:40px; width:300px;"></center></TD>
+             </TR>
+             <TR> 
+                <TH>HSO201A</TH>
+                <TD BGCOLOR="#63eea0"><center><INPUT TYPE="NUMBER" id="c3" style="height:40px; width:300px;"></center></TD>
+                <TD BGCOLOR="#63eea0"><center><INPUT TYPE="text" id="g3" style="height:40px; width:300px;"></center></TD>
+             </TR>
+             <TR> 
+                <TH>CE242A</TH>
+                <TD BGCOLOR="#63eea0"><center><INPUT TYPE="NUMBER" id="c4" style="height:40px; width:300px;"></center></TD>
+                <TD BGCOLOR="#63eea0"><center><INPUT TYPE="text" id="g4" style="height:40px; width:300px;"></center></TD>
+             </TR>
+             <TR> 
+                <TH>CE272A</TH>
+                <TD BGCOLOR="#63eea0"><center><INPUT TYPE="NUMBER" id="c5" style="height:40px; width:300px;"></center></TD>
+                <TD BGCOLOR="#63eea0"><center><INPUT TYPE="text" id="g5" style="height:40px; width:300px;"></center></TD>
+             </TR>
+             <TR> 
+                <TH>CE262A</TH>
+                <TD BGCOLOR="#63eea0"><center><INPUT TYPE="NUMBER" id="c6" style="height:40px; width:300px;"></center></TD>
+                <TD BGCOLOR="#63eea0"><center><INPUT TYPE="text" id="g6" style="height:40px; width:300px;"></center></TD>
+             </TR>
+        </TABLE><br>
+        <div>
+            <button onclick="spi_calc();" style="background-color:powderblue; border-color:blueviolet; border-radius:10px; width:120px; height:40px; font-size:15px;">
+                Calculate spi
+            </button>
+        </div>
+        <BR>
+        <div id="ans">
+        </div>
+        <hr height="5px" color="blue"> <br>
+              <script>
+            function grade(f)
+            {
+                if(f=='A')
+                {
+                    return 10;
+                }
+                else if(f=='B')
+                {
+                    return 8;
+                }
+                else if(f=='C')
+                {
+                    return 6;
+                }
+                else if(f=='D')
+                {
+                    return 4;
+                }
+                else if(f=='E' || f=='F')
+                {
+                    return 0;
+                }
+            }
+            function spi_calc()
+            {
+                var c1 = document.getElementById('c1').value;
+                var c2 = document.getElementById('c2').value;
+                var c3 = document.getElementById('c3').value;
+                var c4 = document.getElementById('c4').value;
+                var c5 = document.getElementById('c5').value;
+                var c6 = document.getElementById('c6').value;
+                var f1 = document.getElementById('g1').value;
+                var f2 = document.getElementById('g2').value;
+                var f3 = document.getElementById('g3').value;
+                var f4 = document.getElementById('g4').value;
+                var f5 = document.getElementById('g5').value;
+                var f6 = document.getElementById('g6').value;
+                var g1,g2,g3,g4,g5,g6;
+                g1=grade(f1);
+                g2=grade(f2);
+                g3=grade(f3);
+                g4=grade(f4);
+                g5=grade(f5);
+                g6=grade(f6);
+                var c= c1*1 + c2*1 + c3*1 + c4*1 + c5*1 + c6*1;
+                var g= c1*g1 + c2*g2 + c3*g3 + c4*g4 + c5*g5 + c6*g6;
+                document.getElementById("ans").innerHTML ="Answer: "+g/c;
+            }
+        </script>
+        </center>
+    </body>
+   </html>

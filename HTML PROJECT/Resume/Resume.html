@@ -1,0 +1,320 @@
+<html>
+    <head>
+        <title>
+            My Resume
+        </title>
+        <style>
+            body {
+                 background-color: #a1dfe4bb;
+                height: 1403px;
+                width: 992px;
+               
+            }
+            mark { 
+              background-color: lightgray;
+              color: black;
+            }
+            #resumeEmailDivision {
+                text-align: right;
+            }
+
+            #resumeNameHeading {
+                font-size: 30px;
+                font-weight: bold;
+            }
+            
+            /*#resumeEmailDivision {
+                text-align: center;
+                background: lightgray;
+                border: 5px solid blue;
+                border-radius: 25px;
+                font-size: 3opx;
+                font-weight: bold;
+            }
+            #resumeNameDivision { 
+                color: blue;
+                background: rgb(165, 241, 165);
+            }
+            #resumeEmailDivision {
+                color: red;
+                background: gray;
+            }
+            #educationalQualification {
+                border: 1px solid black;
+            }
+            
+            #heading3 {
+                border: 3px solid red;
+            }*/
+            #headingDivision {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .heading {
+                border: 2px solid black;
+            }
+
+            .sectionHeading {
+                display: flex;
+                flex-direction: column;
+                font-size: 24px;
+                font-weight: bold;
+                border-bottom: 3px solid black;
+            }
+
+            
+            .body {
+                border-left: 2px solid black;
+                border-right: 2px solid black;
+            }
+
+            .bodyBottom {
+                border-bottom: 2px solid black;
+            }
+
+            #educationalQualificationsTable {
+                width: 100%;
+                border: 1px solid black;
+            }
+
+            #bottomDivision {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+
+            .headingContent {
+                text-align: left;
+                font-weight: bold;
+                font-size: 18px;
+                text-decoration: underline;
+            }
+
+            .headingContent2 {
+                text-align: left;
+                font-weight: bold;
+                font-size: 18px;
+                text-decoration: underline;
+            }
+
+            .subheadingContent {
+                text-align: left;
+                font-size: 14px;
+            }
+
+            .contentLocation {
+                text-align: right;
+                font-size: 14px;
+            }
+
+            .contentTime {
+                text-align: right;
+                font-size: 14px;
+            }
+
+            .contentText {
+                text-align: left;
+                font-size: 14px;
+            }
+            .realign {
+                display: flex;
+                flex-direction: column;
+                               }
+
+
+            #relevantCoursesFlex {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            #leftDivision {
+                padding-right: 10px;
+            }
+
+            #rightDivision{
+                  padding-left: 10px;
+            }
+        </style>
+    </head>
+
+    <body id="resumeBody" bgcolor="skyblue" >
+        <img src="pics.jpg" align="left" height="100px">
+        <div id="headingDivision">
+            <div id="resumeNameDivision">
+                <div id="resumeNameHeading"> Anuradha Singh <br /> </div>
+                Sophomore <br />
+                Department of Civil Engineering <br />
+                IIT Kanpur <br />
+            </div>
+            <div id="resumeEmailDivision">
+                anuradhasingh10072000@gmail.com<br />
+                +91-7906981846<br />
+                https://www.linkedin.com/in/anuradha-singh-241928200 {Linkedin ID}<br />
+                           </div>
+        </div>
+            <div id="educationalQualification">
+            <table id="educationalQualificationsTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th class="heading">Year</th>
+                        <th class="heading">Degree</th>
+                        <th class="heading" id="heading3">Institution (Board)</th>
+                        <th class="heading">CGPA/%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="body">2024*</td>
+                        <td class="body">B.Tech, CE</td>
+                        <td class="body">Indian Institute of Technology, Kanpur</td>
+                        <td class="body">7.5/10</td>
+                    </tr>
+                    <tr>
+                        <td class="body">2019</td>
+                        <td class="body">CBSE XII</td>
+                        <td class="body">Gaurav Memorial International School, Kanpur</td>
+                        <td class="body">92.2%</td>
+                    </tr>
+                    <tr>
+                        <td class="body bodyBottom">2017</td>
+                        <td class="body bodyBottom">CBSE X</td>
+                        <td class="body bodyBottom">Gaurav Memorial International School, Kanpur</td>
+                        <td class="body bodyBottom">10/10</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>&nbsp;</div>
+        </div>
+    <div id="realign">
+        <div id="bottomDivision">
+            <div id="leftDivision">
+            <div id="bottomContent">
+                <div class="sectionHeading">
+                    <mark> Work Experience &nbsp;</mark>
+                </div>
+                <br>
+                <div class="headingContent">&nbsp;Member of GI Project
+                </div>
+                <div class="subheadingContent">&nbsp;<font size="+0.5">Organized by Society of Civil Engineering</font>
+                </div>
+                <div class="contentLocation">India
+                </div>
+                <div class="contentTime">Winter 2021
+                </div>
+                <div class="contentText">
+                    <ul>
+                        <li>I learnt HTML and CSS.</li>
+                        <li>Made my resume using HTML and CSS.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="headingContent">&nbsp;Intro to GameDev
+            </div>
+            <div class="subheadingContent">&nbsp;<font size="+0.5">Organized by GameDev Society, IITK</font>
+            </div>
+            <div class="contentLocation">India
+            </div>
+            <div class="contentTime">May 2021 - July 2021
+            </div>
+            <div class="contentText">
+                <ul>
+                    <li>Developed a basic game using Unity and Blender from scratch as a team.</li>
+                    <li>Made the environment setup for the game.</li>
+                    <li>Created custom animations and added them to the character.</li>
+                </ul>
+            </div>
+
+            <div id="rightDivision">
+            <div id="bottomContent">
+                <div class="sectionHeading">
+                    <mark> Technical Skills&nbsp;</mark>
+                </div>
+                <div class="contentText">
+                    <font size="+0.5"> &nbsp;Programming: C/C++ | HTML | CSS<br>
+                    &nbsp;Tools: Microsoft Office | powerpoint | photoshop | illustrator</font>
+                </div>
+
+                <div class="sectionHeading">
+                    <mark>Positions of Responsibility &nbsp;</mark>
+                </div>
+                <div class="headingContent2">&nbsp;Design and animations club, IIT Kanpur
+                </div>
+                <div>
+                    &nbsp;<font size="+1"><B>Secretary</B></font>
+                </div>
+                <div class="contentLocation">India
+                </div>
+                <div class="contentTime">June 2020 - Present
+                </div>
+                <div class="contentText">
+                    &nbsp;Appointed by the leaders to aid them in the conduction of various e-sports tournament.
+                </div>
+                
+                <div class="headingContent2">&nbsp;Antaragni, IIT Kanpur
+                </div>
+                <div>
+                    &nbsp;<font size="+1"><B>Secretary</B></font>
+                </div>
+                <div class="contentLocation">India
+                </div>
+                <div class="contentText">
+                    &nbsp;Appointed by the organizers to aid them in the smooth conduction of the event.
+                </div>
+                <div class="contentLocation">India
+                </div>
+                
+                <div class="headingContent2">&nbsp;Academic Mentor, IIT Kanpur
+                </div>
+                <div>
+                </div>
+                <div class="contentLocation">India
+                </div>
+                <div class="contentText">
+                    &nbsp;Guided first year student with the course of engineering graphics.
+                </div>
+                <div class="contentLocation">India
+                </div>
+
+                <div class="headingContent2">&nbsp;Student Guide, IIT Kanpur
+                </div>
+               
+                <div class="contentText">
+                    &nbsp; Guided a group of four to five first year students to adapt to the culture of IIT Kanpur;
+                </div> 
+                <div class="contentLocation">India
+                </div>
+                
+                  <div class="sectionHeading">
+                    <mark>Scholastic Achievements &nbsp;</mark>
+                </div>
+                <div class="contentText">
+                    <ul>
+                        <li>Secured an AIR 6037 in JEE Mains 2020 (Paper-1).</li>
+                        <li>Secured an AIR 1765 in IIT-JEE Advanced 2020 (Paper-1).</li>
+                        <li>Secured an AIR 197 in NTST 2015.</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+        <div>
+            <div class="sectionHeading"><mark> Relevant Courses</mark> </div>
+            <div id="relevantCoursesFlex">
+                <div>Introduction to programming<br></div>
+                <div>Civil Engineering Materials<br></div>
+                <div>Engineering Graphics<br></div>
+                <div>Structural Analysis<br></div>
+                <div>Manufacturing Processes<br> </div>
+                    <div>Engineering Hydraulics<br></div>
+                     <div>Introduction to Electronics<br></div>
+                    <div>Sustainable Built Environment<br></div>
+             </div>
+            </div>
+        </div>
+    </body>
+</html>
